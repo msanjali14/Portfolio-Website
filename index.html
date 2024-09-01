@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website - Anjali Verse</title>
+    ,<link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/888e45d3a9.js" crossorigin="anonymous"></script>
+</head>   
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Aspiring Data Analyst</p>
+                <h1>Hey,<br> I'm <span>Anjali</span> Gupta from Mumbai</h1>
+            
+            </div>
+        </div>
+
+    </div>
+    <!-------------------about---------------->     
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpg">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Anjali, a passionate final-year student specializing in AI and Data Science. With a keen interest in harnessing the power of data and machine learning, I've delved into various projects that blend analytical thinking with creative problem-solving. My academic journey has equipped me with a solid foundation in programming, data analysis, and machine learning, and I thrive on turning complex data sets into actionable insights.
+
+                        Beyond the classroom, I enjoy trekking and exploring the great outdoors, where I've had the chance to encounter some fascinating wildlife. These experiences have taught me resilience and adaptability—skills I bring to my work in AI and data science.
+                        
+                        I'm excited to continue learning and growing in this dynamic field, and I'm always on the lookout for new challenges and opportunities to make an impact. Feel free to explore my portfolio to see some of the projects I've worked on!</p>
+                   
+                        <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <i class="fa-solid fa-file-excel"></i><li><span>Microsoft Excel</span><br> Proficient in Data Entry.</li>
+                        <i class="fa-solid fa-r"></i><li><span>R Programming</span><br> Skilled in statistical analysis and data visualization using R.</li>
+                        <i class="fa-brands fa-python"></i><li><span>Python Developer</span><br> Proficient in Python for machine learning, data manipulation, and automation.</li>
+                        <i class="fa-brands fa-java"></i><li><span> Java Developer</span><br>Foundational knowledge of Java programming and its core concepts.</li>
+                        <i class="fa-solid fa-code"></i><li><span>HTML and CSS</span><br>  Basic knowledge of structuring web content with HTML and styling it with CSS.</li>
+                        <i class="fa-solid fa-database"></i><li><span>MySQL</span><br>  Experienced in querying and managing databases with SQL.</li>
+                        <i class="fa-solid fa-chart-simple"></i><li><span>Tableau</span><br>  Expertise in creating interactive and insightful data visualizations using Tableau.</li>
+                        <i class="fa-solid fa-warehouse"></i><li><span>Data Warehouse and Data Mining</span><br>  Basic knowledge of designing data warehouse solutions and extracting insights from datasets.</li>
+                    
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>St.Joseph High School-2019</span><br>Completed 10th grade with 75%.</li>
+                        <li><span>Wilson College, Mumbai-2021</span><br> Completed 12th grade with 89% in Science.</li>
+                        <li><span>Rajiv Gandhi Institute of Technology-Current</span><br> Pursuing final year in B.E in AI and Data Science.</li>
+                       
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-------------------projects---------------->  
+ <div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Customer Segmentation.png">
+                <div class="layer">
+                    <h3>Customer Segmentation App</h3>
+                    <p>
+                        This application enables comprehensive analysis and segmentation of customer data, helping businesses refine strategies and understand market nuances. Using advanced analytics, companies can identify key trends and tailor offerings to meet each segment's needs. </p>
+                    <a href="https://github.com/msanjali14/Customer-Segmentation"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Covid-19 Analysis.png">
+                <div class="layer">
+                    <h3>Covid-19 Analysis Dashboard</h3>
+                    <p>This project provides an in-depth analysis of COVID-19 trends across India, focusing on various critical aspects such as total deaths by states, age group details, COVID-19 cases by state, ICMR testing and vaccination progress.  </p>
+                    <a href="https://github.com/msanjali14/Covid-19-analysis"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+                </div>
+            </div>
+            <!--<div class="work">
+                <img src="Images/online store.png">
+                <div class="layer">
+                    <h3>Online-Retail Store Analysis Dashboard</h3>
+                    <p>This project aims to provide detailed insights into the online retail store's performance by analyzing key metrics. The analysis helps the CEO and CMO understand trends, identify top-performing regions and customers, and formulate strategies for expansion. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+            </div>-->
+            <div class="work">
+                <img src="Images/blood bank.png">
+                <div class="layer">
+                    <h3>Blood Bank Management System</h3>
+                    <p>This project develops a software solution for managing blood donation and distribution, including donor registration, inventory tracking, and blood type matching, to ensure efficient and safe transfusions. </p>
+                    <a href="https://github.com/msanjali14/Blood-Bank-Management-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+
+            </div>
+        </div>
+    </div>
+    <a href="https://github.com/msanjali14" class="btn">See More</a>
+ </div>   
+
+ <!------------Contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>msanjaligupta14@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 8369220432</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/anjaliiii_.14/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/anjali-gupta-3a8a841b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/msanjali14"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="Images/AnjaliGupta-Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © 2024 Anjali. All Rights Reserved.</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwn7br-LGK8UGWBr5bZhRYmv2yMMeoslurnlg6ZidzgxOpP9pFweXGSSlx98jdxnTQG/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
